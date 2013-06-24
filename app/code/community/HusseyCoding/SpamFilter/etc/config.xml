@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <HusseyCoding_SpamFilter>
+            <version>1.0.0</version>
+        </HusseyCoding_SpamFilter>
+    </modules>
+    <global>
+        <helpers>
+            <spamfilter>
+                <class>HusseyCoding_SpamFilter_Helper</class>
+            </spamfilter>
+        </helpers>
+        <models>
+            <adminnotification>
+                <rewrite>
+                    <inbox>HusseyCoding_SpamFilter_Model_AdminNotificationInbox</inbox>
+                </rewrite>
+            </adminnotification>
+        </models>
+    </global>
+    <default>
+        <spamfilter>
+            <spamfilter>
+                <enabled>0</enabled>
+            </spamfilter>
+        </spamfilter>
+    </default>
+</config>
