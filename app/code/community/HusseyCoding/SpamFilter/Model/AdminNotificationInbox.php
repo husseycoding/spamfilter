@@ -8,7 +8,7 @@ class HusseyCoding_SpamFilter_Model_AdminNotificationInbox extends Mage_AdminNot
             array_shift($backtrace);
             foreach ($backtrace as $back):
                 $class = $back['class'];
-                if (strpos($class, 'Mage_') === false):
+                if (!preg_match('/^Mage_.*/', $class) && $class != 'Mage'):
                     return;
                 endif;
             endforeach;
