@@ -1,2 +1,3 @@
-app/code/community/HusseyCoding app/code/community/HusseyCoding
+app/code/community/HusseyCoding/SpamFilter app/code/community/HusseyCoding/SpamFilter
+app/code/community/HusseyCoding/Common app/code/community/HusseyCoding/Common
 app/etc/modules/* app/etc/modules/
